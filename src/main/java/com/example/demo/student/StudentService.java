@@ -11,7 +11,8 @@ import java.util.List;
 
 @AllArgsConstructor
 @Service
-public class StudentService {
+public class
+StudentService {
 
     private final StudentRepository studentRepository;
 
@@ -29,6 +30,7 @@ public class StudentService {
 
         studentRepository.save(student);
     }
+
 
     public void deleteStudent(Long studentId) {
         if(!studentRepository.existsById(studentId)) {
